@@ -31,3 +31,24 @@ function peso2(m,h){
 };
 peso2(10,6);
 //Funções sem retorno não é possivel guardar o retorno da opreção recebida em relação aos seus parâmetros.
+
+// funções com parametros em argumentos variados, usando um arrey de argumentos.//
+function somar_args(){
+    let soma_args=0
+    for(let i =0; i<arguments.length;i++){
+        soma_args+=arguments[i]
+    }
+    return soma_args
+}
+const somat=somar_args(2,3,4)
+console.log(somat)
+
+// funções com valores padrão.//
+function valor_padrao(a,b,c){
+    a = a||1;
+    b = b||2;
+    c = c||3;
+    return a + b + c
+}
+const ret_valor=valor_padrao()
+console.log(ret_valor)
