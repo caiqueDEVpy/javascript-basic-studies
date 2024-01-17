@@ -37,15 +37,17 @@ class Pessoa{
         console.log(`${this.nome} está bebendo ${bebida} no momento.`)
     }
 
-
-
-
-
-
-
-
-
-
-
-
 }
+// instanciar um objeto:
+
+//forma 1:
+const pessoa1 = new Pessoa('Caique', 26);
+console.log(pessoa1);
+
+//forma 2:
+const pessoa2= new Object();
+pessoa2.nome='Caique';
+pessoa2.idade=26;
+pessoa2['genero']='masculino' // podemos adicioanr atributos dinamicamente.
+console.log(pessoa2);
+
